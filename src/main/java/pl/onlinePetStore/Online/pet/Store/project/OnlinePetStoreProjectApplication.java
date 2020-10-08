@@ -1,13 +1,13 @@
-package pl.petShop;
+package pl.onlinePetStore.Online.pet.Store.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PetShopApplication {
+public class OnlinePetStoreProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PetShopApplication.class, args);
+		SpringApplication.run(OnlinePetStoreProjectApplication.class, args);
 	}
 
 }

@@ -1,16 +1,13 @@
-package pl.petShop.model;
+package pl.onlinePetStore.Online.pet.Store.project.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@Getter
-@Setter
+@Data
 public class Accessories {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

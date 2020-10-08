@@ -1,4 +1,4 @@
-package pl.petShop.controller;
+package pl.onlinePetStore.Online.pet.Store.project.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
