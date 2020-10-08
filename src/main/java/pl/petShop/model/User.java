@@ -8,12 +8,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/*Dodac FB login
+google login
+przywileje [user, admin, moderator]*/
+
 @Entity
 @Getter
 @Setter
-public class Animal {
+public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
+    private String username;
+    private String mail;
+    private String password;
+    private String permissions;
 }
