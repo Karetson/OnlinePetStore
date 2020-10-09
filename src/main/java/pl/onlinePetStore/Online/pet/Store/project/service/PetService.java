@@ -2,6 +2,7 @@ package pl.onlinePetStore.Online.pet.Store.project.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import pl.onlinePetStore.Online.pet.Store.project.enums.DogBreeds;
 import pl.onlinePetStore.Online.pet.Store.project.model.Pet;
 import pl.onlinePetStore.Online.pet.Store.project.repository.PetRepository;
 
@@ -16,13 +17,14 @@ public class PetService {
         return petRepository.save(pet);
     }
 
-    public Pet editPet(Pet pet) {
-        Pet editedPet = petRepository.findById(pet.getId()).orElseThrow();
+    public Pet editPet(Long id, Pet pet) {
+        Pet editedPet = petRepository.findById(id).orElseThrow();
         editedPet.setName(pet.getName());
         editedPet.setBreed(pet.getBreed());
         editedPet.setDescription(pet.getDescription());
         editedPet.setPrice(pet.getPrice());
-        return editedPet;
+
+        return petRepository.save(editedPet);
     }
 
     public void deletePet(long id) {
@@ -36,4 +38,6 @@ public class PetService {
     public List<Pet> getAllPets() {
         return petRepository.findAll();
     }
+
+
 }

@@ -8,6 +8,6 @@ import pl.onlinePetStore.Online.pet.Store.project.model.Pet;
 
 @Repository
 public interface PetRepository extends JpaRepository<Pet, Long> {
-    void findByBreed(String breed);
-    void findByName(String name);
+    void findByBreed (String breed);
+    void findByName (String name);
 }

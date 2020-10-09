@@ -17,9 +17,9 @@ public class PetController {
         return petService.addPet(pet);
     }
 
-    @PutMapping("/pets")
-    public Pet editPet(@RequestBody Pet pet) {
-        return petService.editPet(pet);
+    @PutMapping("/pets/{id}")
+    public Pet editPet(@PathVariable("id") Long id, @RequestBody Pet pet) {
+        return petService.editPet(id, pet);
     }
 
     @DeleteMapping("/pets/{id}")
