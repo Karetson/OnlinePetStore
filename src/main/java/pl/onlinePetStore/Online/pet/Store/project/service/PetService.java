@@ -2,8 +2,7 @@ package pl.onlinePetStore.Online.pet.Store.project.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.onlinePetStore.Online.pet.Store.project.enums.DogBreeds;
-import pl.onlinePetStore.Online.pet.Store.project.model.Pet;
+import pl.onlinePetStore.Online.pet.Store.project.model.pets.Pet;
 import pl.onlinePetStore.Online.pet.Store.project.repository.PetRepository;
 
 import java.util.List;

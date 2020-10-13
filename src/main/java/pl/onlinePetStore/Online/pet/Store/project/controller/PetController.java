@@ -2,7 +2,8 @@ package pl.onlinePetStore.Online.pet.Store.project.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import pl.onlinePetStore.Online.pet.Store.project.model.Pet;
+import pl.onlinePetStore.Online.pet.Store.project.model.pets.Cat;
+import pl.onlinePetStore.Online.pet.Store.project.model.pets.Pet;
 import pl.onlinePetStore.Online.pet.Store.project.service.PetService;
 
 import java.util.List;

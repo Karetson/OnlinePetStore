@@ -1,4 +1,4 @@
-package pl.onlinePetStore.Online.pet.Store.project.enums;
+package pl.onlinePetStore.Online.pet.Store.project.model.pets;
 
 public enum DogBreeds {
     HUSKY,
