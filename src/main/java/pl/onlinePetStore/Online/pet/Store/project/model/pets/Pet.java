@@ -6,19 +6,15 @@ import lombok.Setter;
 import javax.persistence.*;
 
 /*
-* SuperClass for pet object
-* 13.10.2020
-*/
-
+ * SuperClass for pet object
+ */
 @Entity(name = "pets")
 @Setter
 @Getter
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="pet_type", discriminatorType = DiscriminatorType.STRING) // creating new column with @DiscriminatorValue in entities of accessory
 public class Pet {
-    /*
-     * Fields
-     */
+     // Fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)    // auto incrementation field "id"
     private Long id;
@@ -29,9 +25,7 @@ public class Pet {
     private String image;
     private Double price;
 
-    /*
-     * Constructors
-     */
+     // Constructors
     public Pet() {
     }
 

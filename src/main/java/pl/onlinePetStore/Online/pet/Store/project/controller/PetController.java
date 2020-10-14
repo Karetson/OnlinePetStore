@@ -2,17 +2,20 @@ package pl.onlinePetStore.Online.pet.Store.project.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import pl.onlinePetStore.Online.pet.Store.project.model.pets.Cat;
 import pl.onlinePetStore.Online.pet.Store.project.model.pets.Pet;
 import pl.onlinePetStore.Online.pet.Store.project.service.PetService;
-
 import java.util.List;
 
+/*
+ * Controller for Pets
+ * Initialized methods for CRUD
+ */
 @RestController
 @RequiredArgsConstructor
 public class PetController {
     private final PetService petService;
 
+    // CRUD methods
     @PostMapping("/pets")
     public Pet addPet(@RequestBody Pet pet) {
         return petService.addPet(pet);

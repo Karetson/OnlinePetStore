@@ -3,12 +3,13 @@ package pl.onlinePetStore.Online.pet.Store.project.model.pets;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
+/*
+ * Dog - one of Pet object
+ */
 @Entity
 @DiscriminatorValue("Pies")
 public class Dog extends Pet {
-    /*
-     * Constructors
-     */
+    // Constructors
     public Dog() {
     }
 

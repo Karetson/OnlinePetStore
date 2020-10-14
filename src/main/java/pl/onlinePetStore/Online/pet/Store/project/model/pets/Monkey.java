@@ -2,12 +2,14 @@ package pl.onlinePetStore.Online.pet.Store.project.model.pets;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+
+/*
+ * Monkey - one of Pet object
+ */
 @Entity
 @DiscriminatorValue("Małpka")
 public class Monkey extends Pet {
-    /*
-     * Constructors
-     */
+    // Constructors
     public Monkey() {
     }
 

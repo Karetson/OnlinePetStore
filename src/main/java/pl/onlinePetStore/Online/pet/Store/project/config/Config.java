@@ -8,9 +8,15 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/*
+ * Project configuration:
+ * - Swagger
+ */
+
 @Configuration
 @EnableSwagger2
 public class Config {
+    // hide Basic Error Controller (default controller from Swagger)
     @Bean
     public Docket swaggerApi() {
         return new Docket(DocumentationType.SWAGGER_2)

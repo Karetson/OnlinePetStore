@@ -4,16 +4,12 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 /*
-* Model class for Cat object
-* 13.10.2020
+ * Cat - one of Pet object
  */
-
 @Entity
 @DiscriminatorValue("Kot")
 public class Cat extends Pet {
-    /*
-     * Constructors
-     */
+    // Constructors
     public Cat() {
     }
 
