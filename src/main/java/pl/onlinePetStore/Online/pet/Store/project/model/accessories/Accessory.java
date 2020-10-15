@@ -20,7 +20,7 @@ public class Accessory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private String pet_type;
+    private String petType;
     private String image;
     private String description;
     private double price;
@@ -29,10 +29,10 @@ public class Accessory {
     public Accessory() {
     }
 
-    public Accessory(long id, String name, String pet_type, String image, String description, double price) {
+    public Accessory(long id, String name, String petType, String image, String description, double price) {
         this.id = id;
         this.name = name;
-        this.pet_type = pet_type;
+        this.petType = petType;
         this.image = image;
         this.description = description;
         this.price = price;

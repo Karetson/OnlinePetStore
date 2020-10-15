@@ -20,7 +20,7 @@ public class PetService {
         return petRepository.save(pet);
     }
 
-    public Pet editPet(Long id, Pet pet) {
+    public Pet editPet(long id, Pet pet) {
         Pet editedPet = petRepository.findById(id).orElseThrow();
         editedPet.setName(pet.getName());
         editedPet.setDescription(pet.getDescription());
