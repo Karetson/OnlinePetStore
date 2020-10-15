@@ -23,7 +23,6 @@ public class PetService {
     public Pet editPet(Long id, Pet pet) {
         Pet editedPet = petRepository.findById(id).orElseThrow();
         editedPet.setName(pet.getName());
-        editedPet.setBreed(pet.getBreed());
         editedPet.setDescription(pet.getDescription());
         editedPet.setPrice(pet.getPrice());
 
@@ -41,4 +40,6 @@ public class PetService {
     public List<Pet> getAllPets() {
         return petRepository.findAll();
     }
+
+
 }

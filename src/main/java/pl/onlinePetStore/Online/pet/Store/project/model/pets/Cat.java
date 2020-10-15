@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue("Kot")
 public class Cat extends Pet {
+    // Fields
+
     // Constructors
     public Cat() {
     }
@@ -17,4 +19,3 @@ public class Cat extends Pet {
         super(id, name, gender, breed, description, image, price);
     }
 }
-

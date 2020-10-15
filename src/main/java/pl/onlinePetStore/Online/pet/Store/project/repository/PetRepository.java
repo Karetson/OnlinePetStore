@@ -13,6 +13,6 @@ import pl.onlinePetStore.Online.pet.Store.project.model.pets.Pet;
 @Repository
 public interface PetRepository extends JpaRepository<Pet, Long> {
     // Nonstandards methods
-    void findByBreed (String breed);
+    // void findByBreed (String breed);
     void findByName (String name);
 }
