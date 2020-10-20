@@ -2,9 +2,7 @@ package pl.onlinestore.pet.adapters.mysql.pet;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import pl.onlinestore.pet.domain.pet.Pet;
 
 import javax.persistence.*;

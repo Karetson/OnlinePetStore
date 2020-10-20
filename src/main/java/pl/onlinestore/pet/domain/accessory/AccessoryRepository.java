@@ -1,16 +1,14 @@
 package pl.onlinestore.pet.domain.accessory;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import pl.onlinestore.pet.adapters.mysql.accessories.AccessoryEntity;
 
-/*
- * AccessoryRepository for Accessory object with CRUD
- * Initialized nonstanard methods
- */
+import java.util.List;
+import java.util.Optional;
 
-//add findByPrice with sort
-@Repository
-public interface AccessoryRepository extends JpaRepository<Accessory, Long> {
-    // Nonstandards methods
-
+public interface AccessoryRepository {
+    void findByName(String name);
+    Optional<AccessoryEntity> findById(long id);
+    List<AccessoryEntity> findAll();
+    AccessoryEntity save(AccessoryEntity accessoryEntity);
+    void deleteById(long id);
 }
