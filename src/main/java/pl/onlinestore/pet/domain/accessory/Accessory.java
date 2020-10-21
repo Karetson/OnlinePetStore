@@ -9,7 +9,7 @@ public class Accessory {
     Long id;
     String name;
     String petType;
-    String image;
+    byte[] image;
     String description;
     BigDecimal price;
 }

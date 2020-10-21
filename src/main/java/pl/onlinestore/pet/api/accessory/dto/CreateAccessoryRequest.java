@@ -13,7 +13,7 @@ public class CreateAccessoryRequest {
     String name;
     @NotEmpty
     String petType;
-    String image;
+    byte[] image;
     String description;
     @NotNull
     BigDecimal price;

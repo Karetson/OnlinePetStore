@@ -3,7 +3,6 @@ package pl.onlinestore.pet.integration.domain.pet;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import pl.onlinestore.pet.adapters.mysql.pet.PetEntity;
 import pl.onlinestore.pet.api.pet.dto.CreatePetRequest;
 import pl.onlinestore.pet.domain.pet.Pet;
 import pl.onlinestore.pet.domain.pet.PetFacade;
@@ -31,7 +30,7 @@ public class PetFacadeTest {
     @Test
     void shouldLoadOnePetAfterInsertingOneToDb() {
         //given
-        CreatePetRequest pet = new CreatePetRequest("name", true, "pet", "test", "test", new BigDecimal("123.45"));
+        CreatePetRequest pet = new CreatePetRequest("name", true, "pet", new byte[1], new BigDecimal("123.45"));
         petFacade.addPet(pet);
         //when
         List<Pet> allPets = petFacade.getPets();

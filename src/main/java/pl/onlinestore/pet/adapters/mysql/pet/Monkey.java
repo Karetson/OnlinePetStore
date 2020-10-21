@@ -17,8 +17,8 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 public class Monkey extends PetEntity {
-    public Monkey(Long id, String name, boolean gender, String breed, String description, String image, BigDecimal price) {
-        super(id, name, gender, breed, description, image, price);
+    public Monkey(Long id, String name, boolean gender, String description, byte[] image, BigDecimal price) {
+        super(id, name, gender, description, image, price);
     }
 }
 

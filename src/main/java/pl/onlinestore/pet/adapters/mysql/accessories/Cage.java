@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 public class Cage extends AccessoryEntity {
     private String dimensions;
 
-    public Cage(long id, String name, String petType, String image, String description, BigDecimal price, String dimensions) {
+    public Cage(long id, String name, String petType, byte[] image, String description, BigDecimal price, String dimensions) {
         super(id, name, petType, image, description, price);
         this.dimensions = dimensions;
     }

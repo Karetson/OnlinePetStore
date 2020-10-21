@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 @EqualsAndHashCode(callSuper = true)
 @DiscriminatorValue("grit")
 public class Grit extends AccessoryEntity {
-    public Grit(long id, String name, String pet_type, String image, String description, BigDecimal price) {
+    public Grit(long id, String name, String pet_type, byte[] image, String description, BigDecimal price) {
         super(id, name, pet_type, image, description, price);
     }
 }

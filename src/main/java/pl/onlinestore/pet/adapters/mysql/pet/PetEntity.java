@@ -24,9 +24,8 @@ public class PetEntity {
     private Long id;
     private String name;
     private boolean gender;
-    private String breed;
     private String description;
-    private String image;
+    private byte[] image;
     private BigDecimal price;
 
     public Pet asPet() {
@@ -34,7 +33,6 @@ public class PetEntity {
                 id,
                 name,
                 gender,
-                breed,
                 description,
                 image,
                 price

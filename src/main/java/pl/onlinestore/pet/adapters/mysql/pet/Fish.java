@@ -17,8 +17,11 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Data
 public class Fish extends PetEntity {
-    public Fish(Long id, String name, boolean gender, String breed, String description, String image, BigDecimal price) {
-        super(id, name, gender, breed, description, image, price);
+    private FishBreed fishBreed;
+
+    public Fish(Long id, String name, boolean gender, String description, byte[] image, BigDecimal price, FishBreed fishBreed) {
+        super(id, name, gender, description, image, price);
+        this.fishBreed = fishBreed;
     }
 }
 

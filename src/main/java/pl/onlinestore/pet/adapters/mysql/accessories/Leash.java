@@ -19,7 +19,7 @@ public class Leash extends AccessoryEntity {
     private String color;
     private String material;
 
-    public Leash(long id, String name, String pet_type, String image, String description, BigDecimal price, BigDecimal length, String color, String material) {
+    public Leash(long id, String name, String pet_type, byte[] image, String description, BigDecimal price, BigDecimal length, String color, String material) {
         super(id, name, pet_type, image, description, price);
         this.length = length;
         this.color = color;

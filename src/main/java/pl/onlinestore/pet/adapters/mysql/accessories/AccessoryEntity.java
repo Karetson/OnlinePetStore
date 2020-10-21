@@ -6,10 +6,9 @@ import pl.onlinestore.pet.domain.accessory.Accessory;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-/*
+/**
  * SuperClass for Accessories object
  */
-
 @Entity(name = "accessories")
 @Data
 @NoArgsConstructor
@@ -22,7 +21,7 @@ public class AccessoryEntity {
     private Long id;
     private String name;
     private String petType;
-    private String image;
+    private byte[] image;
     private String description;
     private BigDecimal price;
 

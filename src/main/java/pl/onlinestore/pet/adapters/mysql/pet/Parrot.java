@@ -17,7 +17,10 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 public class Parrot extends PetEntity {
-    public Parrot(Long id, String name, boolean gender, String breed, String description, String image, BigDecimal price) {
-        super(id, name, gender, breed, description, image, price);
+    private ParrotBreed parrotBreed;
+
+    public Parrot(Long id, String name, boolean gender, String description, byte[] image, BigDecimal price, ParrotBreed parrotBreed) {
+        super(id, name, gender, description, image, price);
+        this.parrotBreed = parrotBreed;
     }
 }

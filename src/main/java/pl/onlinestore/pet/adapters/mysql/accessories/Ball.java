@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 public class Ball extends AccessoryEntity {
     private BigDecimal size;
 
-    public Ball(Long id, String name, String petType, String image, String description, BigDecimal price, BigDecimal size) {
+    public Ball(Long id, String name, String petType, byte[] image, String description, BigDecimal price, BigDecimal size) {
         super(id, name, petType, image, description, price);
         this.size = size;
     }

@@ -12,10 +12,8 @@ public class CreatePetRequest {
     @NotEmpty
     String name;
     boolean gender;
-    @NotEmpty
-    String breed;
     String description;
-    String image;
+    byte[] image;
     @NotNull
     BigDecimal price;
 
@@ -24,7 +22,6 @@ public class CreatePetRequest {
                 null,
                 name,
                 gender,
-                breed,
                 description,
                 image,
                 price
@@ -36,7 +33,6 @@ public class CreatePetRequest {
                 id,
                 name,
                 gender,
-                breed,
                 description,
                 image,
                 price
