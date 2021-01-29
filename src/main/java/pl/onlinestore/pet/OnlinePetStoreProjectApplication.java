@@ -3,7 +3,7 @@ package pl.onlinestore.pet;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*
+/**
  * Main runner application for OnlinePetStore
  * Connection to MySQL Database
  * CRUD Pet object, Accessory object
